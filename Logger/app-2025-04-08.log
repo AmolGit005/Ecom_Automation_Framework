@@ -1,0 +1,23 @@
+[INFO ] 2025-04-08 15:03:50.432 [main] Log - =====================================Automation Exercise App Login Test Started TEST START=========================================
+[INFO ] 2025-04-08 15:03:55.726 [main] Log - Automation Exercise App launched successfully
+[INFO ] 2025-04-08 15:03:56.526 [main] BasePage - Failed to click on the Login Button
+[INFO ] 2025-04-08 15:06:50.376 [main] Log - =====================================Automation Exercise App Login Test Started TEST START=========================================
+[INFO ] 2025-04-08 15:06:55.099 [main] Log - Automation Exercise App launched successfully
+[INFO ] 2025-04-08 15:06:56.803 [main] Log - =====================================Automation Exercise App Login Test Ended TEST END=========================================
+[INFO ] 2025-04-08 15:10:49.078 [main] Log - =====================================Automation Exercise App Login TEST START=========================================
+[INFO ] 2025-04-08 15:10:53.646 [main] Log - Automation Exercise App launched successfully
+[INFO ] 2025-04-08 15:10:55.601 [main] Log - =====================================Automation Exercise App Login TEST END=========================================
+[INFO ] 2025-04-08 18:31:17.144 [main] Log - =====================================Automation Exercise App Login TEST START=========================================
+[INFO ] 2025-04-08 18:31:48.156 [main] Log - Automation Exercise App launched successfully
+[INFO ] 2025-04-08 18:32:39.106 [main] Log - =====================================Automation Exercise App Login TEST END=========================================
+[INFO ] 2025-04-08 18:32:39.116 [main] Log - =====================================Search Products Home Page TEST START=========================================
+[INFO ] 2025-04-08 18:33:09.132 [main] BasePage - Failed to click on the Products section Button on Home Page
+[INFO ] 2025-04-08 18:34:28.699 [main] Log - =====================================Automation Exercise App Login TEST START=========================================
+[INFO ] 2025-04-08 18:35:00.044 [main] Log - Automation Exercise App launched successfully
+[INFO ] 2025-04-08 18:35:17.910 [main] BasePage - Failed to enter the user email
+[INFO ] 2025-04-08 18:36:35.276 [main] Log - =====================================Automation Exercise App Login TEST START=========================================
+[INFO ] 2025-04-08 18:36:50.446 [main] Log - Automation Exercise App launched successfully
+[INFO ] 2025-04-08 18:36:50.457 [main] BasePage - Failed to click on the Login SignUpButton
+[INFO ] 2025-04-08 18:37:38.165 [main] Log - =====================================Automation Exercise App Login TEST START=========================================
+[INFO ] 2025-04-08 18:37:59.642 [main] Log - Automation Exercise App launched successfully
+[INFO ] 2025-04-08 18:38:29.655 [main] BasePage - Failed to click on the Login SignUpButton

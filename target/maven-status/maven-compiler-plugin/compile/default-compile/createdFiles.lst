@@ -1,0 +1,7 @@
+pages\BasePage.class
+pages\LoginPage.class
+pages\HomePage.class
+config\ConfigManager.class
+pages\SwagLabsLogin.class
+config\Configurations.class
+core\DriverManager.class

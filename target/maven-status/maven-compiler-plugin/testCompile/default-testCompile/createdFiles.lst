@@ -1,0 +1,8 @@
+utils\Log.class
+stepdefinitions\Hooks.class
+stepdefinitions\SwagLabsLoginSteps.class
+utils\ExtentReportManager.class
+runners\TestRunner.class
+utils\LoggerUtil.class
+stepdefinitions\HomePageSteps.class
+stepdefinitions\LoginPageSteps.class
