@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Pull code from the Git repository
-                git url: 'https://github.com/AmolGit005/ShoppingCart_Automation.git', branch: 'main'
+                git url: 'https://github.com/AmolGit005/Ecom_Automation_Framework.git', branch: 'main'
             }
         }
         stage('Build') {
