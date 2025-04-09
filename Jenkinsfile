@@ -19,12 +19,7 @@ pipeline {
                 bat 'mvn test'
             }
         }
-        stage('Package') {
-            steps {
-                // Package the application
-                bat 'mvn package'
-            }
-        }
+
     }
     post {
         success {
