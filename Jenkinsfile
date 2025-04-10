@@ -10,13 +10,15 @@ pipeline {
         stage('Build') {
             steps {
                 // Run Maven build
-                bat 'mvn clean install'
+                bat 'mvn clean'
             }
         }
         stage('Test') {
             steps {
                 // Run Maven tests
-                bat 'mvn test'
+                bat 'mvn test -Dbrowser=chromium'
+                bat 'mvn test -Dbrowser=firefox'
+                bat 'mvn test -Dbrowser=webkit'
             }
         }
 
