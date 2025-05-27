@@ -21,20 +21,15 @@ pipeline {
                 bat 'mvn test -Dbrowser=webkit'
             }
         }
-         stage('Publish HTML Report')
-         {
-            steps {
-                   publishHTML
-                   ([
-                       allowMissing          : false,
-                       alwaysLinkToLastBuild : true,
-                        keepAll              : true,
-                        reportDir            : 'Reports/html',
-                        reportFiles          : 'index.html',
-                        reportName           : 'Extent Report'
-                   ])
+         stage('Publish HTML Report') {
+                     steps {
+                         publishHTML([
+                             reportDir: 'Reports/html',
+                             reportFiles: 'index.html',
+                             reportName: 'Extent Report'
+                         ])
+                     }
                  }
-         }
 
     }
     post {
