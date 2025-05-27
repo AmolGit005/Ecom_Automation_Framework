@@ -36,14 +36,30 @@ pipeline {
 
     }
     post {
-            always {
-                echo 'Pipeline finished.'
-            }
             success {
-                echo 'Build succeeded!'
+                emailext(
+                    subject: 'Build SUCCESS: ${JOB_NAME} #${BUILD_NUMBER}',
+                    body: """
+                        <p>Good news!</p>
+                        <p>Build #${BUILD_NUMBER} succeeded.</p>
+                        <p><a href="${BUILD_URL}">View Build</a></p>
+                        <p><a href="${BUILD_URL}HTML_20Report">View Extent Report</a></p>
+                    """,
+                    recipientProviders: [[$class: 'DevelopersRecipientProvider']],
+                    to: 'your-team@example.com'
+                )
             }
+
             failure {
-                echo 'Build failed.'
+                emailext(
+                    subject: 'Build FAILED: ${JOB_NAME} #${BUILD_NUMBER}',
+                    body: """
+                        <p>Unfortunately, the build failed.</p>
+                        <p><a href="${BUILD_URL}">View Build Logs</a></p>
+                    """,
+                    recipientProviders: [[$class: 'DevelopersRecipientProvider']],
+                    to: 'your-team@example.com'
+                )
             }
         }
 }
