@@ -21,14 +21,31 @@ pipeline {
                 bat 'mvn test -Dbrowser=webkit'
             }
         }
+         stage('Publish HTML Report')
+         {
+            steps {
+                   publishHTML
+                   ([
+                       allowMissing          : false,
+                       alwaysLinkToLastBuild : true,
+                        keepAll              : true,
+                        reportDir            : 'Reports/html',
+                        reportFiles          : 'index.html',
+                        reportName           : 'Extent Report'
+                   ])
+                 }
+         }
 
     }
     post {
-        success {
-            echo 'Build and test completed successfully.'
+            always {
+                echo 'Pipeline finished.'
+            }
+            success {
+                echo 'Build succeeded!'
+            }
+            failure {
+                echo 'Build failed.'
+            }
         }
-        failure {
-            echo 'Build or test failed. Check logs for details.'
-        }
-    }
 }
